@@ -183,8 +183,8 @@ const Header: React.FC<HeaderProps> = ({
                     >
                     Projects
                     </a>
-                    <a
-                    href="/allnews"
+                    <Link
+                    to="/blog"
                     className={`${
                         darkMode
                         ? "text-gray-300 hover:text-white"
@@ -192,7 +192,7 @@ const Header: React.FC<HeaderProps> = ({
                     } font-poppins transition-colors duration-200 text-sm`}
                     >
                     Blog
-                    </a>
+                    </Link>
                     
             </div>
             </div>
@@ -234,7 +234,7 @@ const Header: React.FC<HeaderProps> = ({
                 </button>
                 </>
             ) : (
-                <Link to="/login">
+                <Link to="/blog">
                 <button
                     className={`${
                     darkMode

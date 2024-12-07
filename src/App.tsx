@@ -7,6 +7,7 @@ import Courses from './pages/courses';
 import Footer from './pages/footer';
 import Header from './pages/header';
 import { useEffect, useState } from 'react';
+import Blog from './pages/blog';
 
 
 
@@ -32,6 +33,7 @@ function App() {
             <Routes>
               <Route path='/' element={<HomePage  />} />
               <Route path='/courses' element={<Courses  darkMode={darkMode} />} />
+              <Route path='/blog' element={<Blog />} />
             </Routes>
             <Footer darkMode={darkMode} />
         </div>

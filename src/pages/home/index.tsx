@@ -1,9 +1,11 @@
 
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const HomePage: React.FC = () => {
+    const navigate = useNavigate();
     return (
         <div className={"bg-slate-950 min-h-screen "}>
             <div className="relative flex flex-col md:flex-row bg-slate-950 min-h-[900px] overflow-hidden -z-0
@@ -35,7 +37,7 @@ const HomePage: React.FC = () => {
                         placeholder='Enter your email'
                         className=' bg-white py-1 px-2 w-44 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-purple-400' 
                         />
-                    <button className='py-2 px-4 text-gray-200 font-ubuntu rounded-sm bg-gradient-to-r from-purple-400 via-purple-600 to-blue-600 hover:from-pink-700 hover:to-purple-700'>
+                    <button onClick={() => navigate("/blog")} className='py-2 px-4 text-gray-200 font-ubuntu rounded-sm bg-gradient-to-r from-purple-400 via-purple-600 to-blue-600 hover:from-pink-700 hover:to-purple-700'>
                         Sign up for free!
                     </button>
                     </div>
