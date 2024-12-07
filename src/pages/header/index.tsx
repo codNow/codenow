@@ -74,8 +74,8 @@ const Header: React.FC<HeaderProps> = ({
                     onMouseEnter={() => handleMouseEnter("apps")}
                     onMouseLeave={handleMouseLeave}
                     >
-                    <a
-                        href="/courses"
+                    <Link
+                        to="/courses"
                         className={`group ${
                         darkMode
                             ? "text-gray-300 hover:text-white"
@@ -83,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({
                         } transition-colors duration-200 flex items-center text-sm font-poppins`}
                     >
                         Courses <ChevronDown className="ml-1 transition-transform duration-200 group-hover:mt-1" size={16} />
-                    </a>
+                    </Link>
                     {activeDropdown === "apps" && (
                         <>
                         <div
