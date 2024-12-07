@@ -75,7 +75,7 @@ const Header: React.FC<HeaderProps> = ({
                     onMouseLeave={handleMouseLeave}
                     >
                     <a
-                        href="/"
+                        href="/courses"
                         className={`group ${
                         darkMode
                             ? "text-gray-300 hover:text-white"
